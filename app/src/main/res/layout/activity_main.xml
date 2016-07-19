@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_bkg">
+        <ImageView
+            android:id="@+id/tv_main_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/heima" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/tv_main_logo"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="呆子,快看!"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+            <com.example.administrator.shoujiweishi.activity.view.FocusableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:text="什么鬼,什么,shdjfdjfijdifjidjfjdifjidj,疯了!"
+                android:textColor="#ff0000"
+                android:textSize="17dp"
+                />
+            <com.example.administrator.shoujiweishi.activity.view.FocusableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:singleLine="true"
+                android:text="http://www.baidu.comn·························"
+                android:textColor="#ff0000"
+                android:textSize="10dp"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_main_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/setting_selector"
+            android:onClick="openSetting"
+            android:scaleType="center"
+            android:src="@drawable/setting" />
+
+
+    </RelativeLayout>
+    <!--android:listSelector="@android:color/transparents"选中的背景为透明-->
+   <!-- <GridView
+        android:id="@+id/gv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="3dp"
+        android:verticalSpacing="3dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="2"
+        ></GridView>-->
+
+</LinearLayout>

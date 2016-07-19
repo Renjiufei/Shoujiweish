@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- seletor 选择器  按下 -->
+    <item android:drawable="@drawable/setting_press" android:state_pressed="true"></item>
+    <!-- 默认 -->
+    <item android:drawable="@drawable/setting_normal"></item>
+
+</selector>
